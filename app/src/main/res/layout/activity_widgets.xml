@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+   >
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:text="ToggleButton"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggle"
+        android:layout_alignStart="@+id/toggle"
+        android:layout_below="@+id/toggle"
+        android:layout_marginBottom="30dp"
+        android:text="CheckBox"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp" />
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/ratingBar2"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_marginBottom="13dp"
+        android:background="@mipmap/contact"
+        android:scaleType="fitXY"
+        android:src="@mipmap/contact" />
+
+    <TextView
+        android:id="@+id/textnight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggle"
+        android:layout_alignBottom="@+id/toggle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Night Mode Off"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignLeft="@+id/textnight"
+        android:layout_alignStart="@+id/textnight"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="Check Box Not Selected" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="36dp"
+        android:text="Switch"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textradio"
+        android:layout_alignStart="@+id/textradio"
+        android:layout_alignTop="@+id/spinner"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Spinner"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textcheck"
+        android:layout_alignStart="@+id/textcheck"
+        android:layout_alignTop="@+id/radio"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="Gender" />
+
+    <TextView
+        android:id="@+id/textseekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch1"
+        android:layout_alignLeft="@+id/textspinner"
+        android:layout_alignStart="@+id/textspinner"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Seekbar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_centerVertical="true" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_male"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quickContactBadge2"
+        android:layout_centerHorizontal="true"
+        android:text="RateUs"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/testImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_alignLeft="@+id/textseekbar"
+        android:layout_alignStart="@+id/textseekbar"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android</string>
+    <string name="widgets">Widgets</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="title_activity_demonew">demonew</string>
+    <string name="google_maps_api_key"></string>
+
+</resources>
